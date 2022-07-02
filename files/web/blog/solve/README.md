@@ -5,7 +5,7 @@
 ```
 - README.md		このファイル
 - solve.md		想定解法の解説
-- solver.py		想定解法でのソルバー
+- solver.py		想定解法でのソルバ
 - requirements.txt	ソルバの依存関係
 ```
 
