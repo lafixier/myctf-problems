@@ -7,13 +7,12 @@
         <title>Blog</title>
     </head>
     <body>
-	{% for article in articles %}
-	<div>
-	    <a href="/articles?title={{ article.path }}">
-	        {{ article.title }}
-	    </a>
-	</div>
-	{% endfor %}
+        {% for article in articles %}
+        <div>
+            <a href="/articles?title={{ article.path }}">
+                {{ article.title }}
+            </a>
+        </div>
+        {% endfor %}
     </body>
 </html>
-
