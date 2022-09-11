@@ -1,6 +1,6 @@
 import glob
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 
 
 app = Flask(__name__)
@@ -19,7 +19,7 @@ def articles_():
         article = get_article(path)
         return render_template("article.html", article=article)
     else:
-        return redirect()
+        return redirect(url_for("index_"))
 
 
 def get_articles() -> list:
