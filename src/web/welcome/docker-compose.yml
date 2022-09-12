@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web_welcome_web:
+    container_name: "web_welcome_web"
+    build: .
+    ports:
+    - "8002:8002"
+    volumes:
+      - ./app :/app
