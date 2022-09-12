@@ -1,7 +1,7 @@
 version: "3"
 services:
-  web:
-    container_name: "web"
+  web_blog_web:
+    container_name: "web_blog_web"
     build: .
     ports:
     - "8001:80"
