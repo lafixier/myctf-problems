@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web_login_web:
+    container_name: "web_login_web"
+    build: .
+    ports:
+    - "8003:8003"
+    volumes:
+      - ./app :/app

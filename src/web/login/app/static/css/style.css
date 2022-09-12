@@ -1,0 +1,54 @@
+body {
+    font-family: "Noto Sans JP", "Helvetica Neue", Arial,
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    text-align: center;
+}
+
+.title {
+    margin-top: 60px;
+}
+
+.message-box {
+    background-color: #f06292;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    margin: 30px;
+    padding: 20px;
+    width: 500px;
+    word-break: break-all;
+}
+
+.login-form {
+    margin: 20px;
+}
+
+.login-form .input-text {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 16px;
+    margin: 10px auto;
+    padding: 10px;
+    width: 500px;
+}
+
+.login-form .button {
+    background-color: #4caf50;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 17px;
+    margin: 10px auto;
+    padding: 10px;
+    width: 500px;
+}
+
+.flag {
+    font-size: 20px;
+}
