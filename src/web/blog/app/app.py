@@ -1,4 +1,5 @@
 import glob
+import os
 
 from flask import Flask, render_template, request, redirect, url_for
 
@@ -36,8 +37,12 @@ def get_article_paths() -> dict:
 
 
 def get_article(path: str) -> dict:
-    with open("./articles/"+path, encoding="utf-8") as f:
-        body = f.read()
+    if os.path.exists(f"./articles/{path}"):
+        with open("./articles/"+path, encoding="utf-8") as f:
+            body = f.read()
+    else:
+        body = f"The specified article '{path}' was not found."
+        path = "Not Found"
     return {"title": path, "body": body}
 
 
